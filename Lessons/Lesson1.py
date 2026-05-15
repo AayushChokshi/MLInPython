@@ -1,3 +1,4 @@
+
 def dotProduct(v1, v2):
     if len(v1) != len(v2):
         raise ValueError("Vectors must have the same length")
