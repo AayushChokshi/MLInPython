@@ -79,28 +79,28 @@ b = bestFitIntercept(data)
 print("Slope:", m)
 print("Intercept:", b)
 
-# x = []
-# y = []
+x = []
+y = []
 
-# for point in data:
-#     x.append(point[0])
-#     y.append(point[1])
+for point in data:
+    x.append(point[0])
+    y.append(point[1])
 
-# print(x)
-# print(y)
+print(x)
+print(y)
 
-# plt.scatter(x, y)
+plt.scatter(x, y)
 
-# plt.xlabel("Square Feet")
-# plt.ylabel("Price")
-# plt.title("House Prices vs Square Footage")
+plt.xlabel("Square Feet")
+plt.ylabel("Price")
+plt.title("House Prices vs Square Footage")
 
-# # Domain of the line:
-# x_line = [min(x), max(x)]
-# # Range:
-# y_line = [m * x + b for x in x_line]
+# Domain of the line:
+x_line = [min(x), max(x)]
+# Range:
+y_line = [m * x + b for x in x_line]
 
-# plt.plot(x_line, y_line, color='red')
+plt.plot(x_line, y_line, color='red')
 
-# plt.show()
+plt.show()
 
