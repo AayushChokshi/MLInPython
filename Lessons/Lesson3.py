@@ -67,3 +67,21 @@ for i in range(1000000):
         print("dE_dm:", dE_dm)
         print("Current slope:", m)
         print("Current error:", error)
+
+
+
+
+def best_fit_slope(data):
+    XY = 0
+    X2=0
+    for(xi, yi) in data:
+        XY += xi * yi
+        X2 += xi**2
+
+    return XY/X2
+
+
+
+true_best_fit_slope = best_fit_slope(data)
+print("True best fit slope: ", true_best_fit_slope)
+print("True Error: ", true_best_fit_slope - m)
