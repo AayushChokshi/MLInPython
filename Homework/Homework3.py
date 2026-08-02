@@ -51,8 +51,27 @@ def computeSums(data):
     return sumX, sumY, sumXY, sumX2
 
 
-def computerSumX(data) :
-    
+def computeSumX(data) :
+    sumX = 0
+    for x, y in data:
+        sumX+=x
+    return sumX
+
+def computeSumY(data) :
+    sumY = 0
+    for x, y in data:
+        sumY+=y
+    return sumY
+def computeSumXY(data):
+    sumXY = 0
+    for x, y in data:
+        sumXY +=x* y
+    return sumXY
+def computeSumXSquared(data):
+    sumX2 = 0
+    for x, y in data:
+        sumX2 +=x**2
+    return sumX2
 
 
 # For homework, break this up into single functions

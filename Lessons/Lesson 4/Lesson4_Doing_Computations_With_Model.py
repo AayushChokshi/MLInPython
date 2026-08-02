@@ -47,6 +47,14 @@ def create_full_model(data, vec):
 
     return model
 
+def model(sqft):
+    m = vec[0]
+    b = vec[1]
+
+    return m * sqft * b
+
 
 for(xi, yi) in create_full_model(data, vec):
     print(xi, ",", yi)
+
+print(model, )
